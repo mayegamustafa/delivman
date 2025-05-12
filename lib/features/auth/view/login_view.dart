@@ -86,7 +86,9 @@ class LoginView extends HookConsumerWidget {
                                     color: context.colorTheme.surfaceBright
                                         .withOpacity(.05),
                                   ),
-                                  initialSelection: 'bd',
+                                 // initialSelection: 'bd',
+                                  initialSelection: 'UG', // 'UG' is the ISO country code for Uganda
+
                                   padding: const EdgeInsets.symmetric(
                                     horizontal: 0,
                                   ),
@@ -113,7 +115,7 @@ class LoginView extends HookConsumerWidget {
                             Expanded(
                               child: FormBuilderTextField(
                                 name: 'phone',
-                                initialValue: '011111111111111',
+                                initialValue: '',
                                 decoration: InputDecoration(
                                   fillColor: context.colorTheme.surfaceBright
                                       .withOpacity(.05),
@@ -127,7 +129,7 @@ class LoginView extends HookConsumerWidget {
                         const Gap(Insets.lg),
                         FormBuilderTextField(
                           name: 'password',
-                          initialValue: '123123',
+                          initialValue: '',
                           obscureText: hidePass.value,
                           decoration: InputDecoration(
                             fillColor: context.colorTheme.surfaceBright

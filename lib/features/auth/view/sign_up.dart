@@ -234,7 +234,8 @@ class SignUpView extends HookConsumerWidget {
                                         color: context.colorTheme.surface,
                                       ),
                                       child: CountryCodePicker(
-                                        initialSelection: 'bd',
+                                        initialSelection: 'UG',
+                                        
                                         boxDecoration: BoxDecoration(
                                           borderRadius: Corners.lgBorder,
                                           color: context
